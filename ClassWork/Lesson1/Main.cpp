@@ -3,7 +3,13 @@
 
 using namespace std;
 
-class Car {
+class Engine {
+    void startEngine() {
+        cout << "Engine has started";
+    }
+};
+
+class Car{
 public:
     string model;
     int year;
@@ -11,7 +17,9 @@ public:
 
 public:
     Car(string model, int year, int millage)
-        :model(model), year(year), millage(millage){}
+        :model(model), year(year), millage(millage) {
+
+    }
 
     void describe() {
         cout << "This " << model << " is a " << year << " model";
